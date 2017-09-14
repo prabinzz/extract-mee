@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+    <meta name="author" content="prabin parajuli">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>RMS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <textarea class="form-control" id="input-text" name="text" rows="8" cols="80"></textarea>
+        </div>
+        <div class="row">
+          <label for="input-type" >Filter Type:</label>
+          <select id="input-type" class="form-control" name="input-type">
+            <option value="email">Email</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="output-type">Output Type:</label>
+          <select id="output-type" class="form-control" name="output-type">
+            <option value="plain">Plain Text</option>
+            <option value="json">JSON</option>
+          </select>
+        </div>
+        <div class="row">
+          <input id="get" class="col-sm-2 col-sm-push-5 btn btn-primary" type="button" name="get" value="Extract">
+        </div>
+        <div class="container">
+          <div id="output-div">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.min.js" charset="utf-8"></script>
+  <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/functions.js" charset="utf-8"></script>
+  <script src="assets/js/index.js" charset="utf-8"></script>
+  </body>
+</html>

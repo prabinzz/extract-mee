@@ -1,3 +1,15 @@
 .form-control{
   margin-bottom: 10px;
 }
+
+body{
+  margin-top: 20px;
+}
+
+#output-div{
+    margin-top: 20px;
+}
+
+#output-div>pre{
+  font-size: 17px;
+}

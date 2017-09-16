@@ -4,21 +4,25 @@
     <meta charset="utf-8">
     <meta name="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="">
+    <meta name="discription" content="Extract various formet of text like email , url , phone number etc.">
     <meta name="author" content="prabin parajuli">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>RMS</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Extract-me || Home</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
         <div class="row">
-          <textarea class="form-control" id="input-text" name="text" rows="8" cols="80"></textarea>
+          <div class="input-tools">
+          <!-- Reserved -->
+          </div>
+          <textarea class="form-control" id="input-text" name="text" rows="8" placeholder="Text to filter."></textarea>
         </div>
         <div class="row">
           <label for="input-type" >Filter Type:</label>
           <select id="input-type" class="form-control" name="input-type">
             <option value="email">Email</option>
+            <option value="url">URL</option>
           </select>
         </div>
         <div class="row">
@@ -29,20 +33,24 @@
           </select>
         </div>
         <div class="row">
-          <input id="get" class="col-sm-2 col-sm-push-5 btn btn-primary" type="button" name="get" value="Extract">
-        </div>
-        <div class="container">
-          <div id="output-div">
+          <div class="col-sm-2 col-sm-push-5">
+            <input id="get" class="form-control  btn btn-primary" type="button" name="get" value="Extract">
           </div>
         </div>
-      </div>
-    </div>
+        <div class="container">
+          <div id="output-div" style="display: none;">
+            <div id="output-info">
+
+            </div>
+            <pre></pre>
+          </div>
+        </div>
   </div>
 
   <script src="assets/js/jquery.min.js" charset="utf-8"></script>
   <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/functions.js" charset="utf-8"></script>
+  <script src="assets/js/list-info.js" charset="utf-8"></script>
   <script src="assets/js/index.js" charset="utf-8"></script>
   </body>
 </html>

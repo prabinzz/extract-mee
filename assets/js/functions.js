@@ -22,3 +22,17 @@ function output(type, list, div) {
   type = outputType[type];
   type.output(list,div);
 }
+
+function afterOut(){
+  clipboardInit();
+  outContainer.slideDown("fast");
+}
+
+
+function clipboardInit(){
+  infoDiv.append($("<button class='btn btn-success btn-sm'>Copy</button>").click(
+    function(){
+      alert("Coming Soon.");
+    }
+  ))
+}
